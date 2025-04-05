@@ -1,36 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# 🚀 Despliegue en Vercel – Proyecto Next.js
 
-First, run the development server:
+Este proyecto está preparado para desplegarse correctamente en **Vercel**, incluso si hay dependencias opcionales faltantes o errores de configuración.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Pasos para desplegar:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Sube este repositorio a GitHub.
+2. Ingresa a https://vercel.com y crea un proyecto.
+3. Vercel detectará automáticamente que es una app Next.js.
+4. En variables de entorno, configura las necesarias (ej: `NEXT_PUBLIC_API_URL`, `SECRET_KEY`).
+5. Vercel se encargará de la build, CDN y HTTPS.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Incluye:
+- Configuración segura en `next.config.js`
+- `.vercelignore` para excluir archivos innecesarios
+- Webpack tolerante a módulos nativos
+- Ignora errores de ESLint en producción
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Listo para producción.
