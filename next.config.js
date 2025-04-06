@@ -9,22 +9,15 @@ const nextConfig = {
     styledComponents: true,
   },
   images: {
-    domains: ['localhost'],
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
   },
-  webpack(config, { isServer }) {
-    if (!isServer) {
-      config.resolve.fallback = {
-        fs: false,
-        net: false,
-        tls: false,
-        path: false,
-        crypto: false,
-        stream: false,
-      };
-    }
-    return config;
-  },
+  output: 'standalone',
 };
 
 module.exports = nextConfig;
