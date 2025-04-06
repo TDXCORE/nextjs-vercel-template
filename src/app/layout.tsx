@@ -1,9 +1,11 @@
+
 import { Metadata } from 'next';
 import './globals.css';
+import { GlobalStateProvider } from '@/context/GolobalStateProvider';
 
 export const metadata: Metadata = {
   title: 'Dashboard',
-  description: 'Dashboard Application',
+  description: 'Dashboard Template',
 };
 
 export default function RootLayout({
@@ -13,7 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <GlobalStateProvider>
+          {children}
+        </GlobalStateProvider>
+      </body>
     </html>
   );
 }
