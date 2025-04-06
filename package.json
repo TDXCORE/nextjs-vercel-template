@@ -63,10 +63,13 @@
     "tabler-icons-react": "^1.56.0"
   },
   "devDependencies": {
-    "@types/node": "22.14.0",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.1",
     "eslint": "^9",
     "eslint-config-next": "15.0.3",
-    "sass": "^1.81.0"
+    "sass": "^1.81.0",
+    "typescript": "^5.8.3"
   },
   "engines": {
     "node": ">=18"
