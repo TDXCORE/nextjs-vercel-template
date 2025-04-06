@@ -8,7 +8,7 @@ export default function Page() {
       height: '100vh',
       fontSize: '24px'
     }}>
-      Página funcionando correctamente
+      Bienvenido a la nueva versión actualizada
     </div>
   );
 }
