@@ -1,12 +1,11 @@
-modules = ["web", "nodejs-20"]
+modules = ["web", "nodejs-18"]
 run = "npm run dev"
 
 [nix]
 channel = "stable-24_05"
 
 [deployment]
-run = ["sh", "-c", "npm start"]
-build = ["sh", "-c", "npm run build"]
+run = ["sh", "-c", "npm run dev"]
 
 [workflows]
 runButton = "Dev Server"
