@@ -10,6 +10,7 @@ const nextConfig = {
   },
   images: {
     domains: ['localhost'],
+    unoptimized: true,
   },
   webpack(config, { isServer }) {
     if (!isServer) {
